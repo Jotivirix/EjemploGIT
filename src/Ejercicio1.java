@@ -33,5 +33,14 @@ public class Ejercicio1 extends GraphicsProgram{
 				pause(20);
 			}
 		}
+		
+		for(int j=0; j<numLadrillosBase; j++){
+			for(int i=0; i<numLadrillosBase-j; i++){
+				GRect ladrillo = new GRect (anchoLadrillo, altoLadrillo);
+				add(ladrillo,anchoLadrillo*i/2 + anchoLadrillo*j, altoLadrillo*i);
+				
+				pause(20);
+			}
+		}
 	}
 }
